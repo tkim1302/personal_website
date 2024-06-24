@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div class="top-bar">
+            <div class="logo" onclick="refreshPage()">T.K.</div>
+            <div class="tab">
+                <div class="tab-aboutMe" onclick="scrollToSection('about')">About Me</div>
+                <div class="tab-eduExp" onclick="scrollToSection('eduAndExp')">Education & Experience</div>
+                <div class="tab-projects" onclick="scrollToSection('projects')">Projects</div>
+                <div class="tab-contact" onclick="scrollToSection('contact')">Contact</div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="about">
+    <div class="about-bg"></div>
+    <h1 class="hello">Hello there!</h1>
+    <h1 class="name">I'm T K. <span class="introduction"></span></h1>
+</div>
+    <div id="eduAndExp" class="eduAndExp">
+        <div class="careerSummary">Career Summary</div>
+        <div class="edu-box container">
+            <div class="list-edu">EDUCATION</div>
+            <div class="list-edu-actual">
+                <div class="uts">University of Technology, Sydney - Information Technology</div>
+                <div class="period-edu">
+                    <div class="utsPeriod">2022 - 2024</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="exp-box container">
+            <div class="list-exp">EXPERIENCE</div>
+            <div class="list-exp-actual">
+                <div class="utsIntern">Intern : Full Stack Software Engineer - UTS</div>
+                <div class="period-exp">Dec 2023-Apr 2024</div>
+                <div class="laonIntern">Intern : Software Testing Intern - Laonworks</div>
+                <div class="period-exp">Jul 2023-Nov 2023</div>
+            </div>
+        </div>
+
+        <div class="cert-box container">
+            <div class="list-cert">Certifications</div>
+            <div class="list-cert-actual">
+                <div class="awsCert">AWS Certified Solutions Architect-Associate</div>
+                <div class="period-cert">Issued: Jan 2024</div>
+                <div class="oracleCert">Oracle Certified Associate, Java SE 8 Programmer</div>
+                <div class="period-cert">Issued: Jul 2020</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="projects">
+        <div class="project-text">Projects</div>
+        <div class="projects-container">
+            <div class="projects-wrapper">
+                <div class="project-card">Project 1</div>
+                <div class="project-card">Project 2</div>
+                <div class="project-card">Project 3</div>
+                <div class="project-card">Project 4</div>
+                <div class="project-card">Project 5</div>
+            </div>
+        </div>
+        <div class="project-nav">
+            <button class="prev" onclick="slide('left')">&#10094;</button>
+            <button class="next" onclick="slide('right')">&#10095;</button>
+        </div>
+    </div>
+
+    <div id="contact" class="contact">
+        <div class="contact-text">Contact</div>
+        <div class="contact-container">
+            <div id="contact-buttons">
+                <a href="https://www.google.com" class="contact-button">
+                  <img src="svgs/email-part-2-svgrepo-com.svg" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com" class="contact-button">
+                  <img src="svgs/linkedin-svgrepo-com (1).svg" alt="Linkedin">
+                  <a href="https://www.github.com" class="contact-button">
+                    <img src="svgs/linkedin-svgrepo-com (1).svg" alt="GitHub">
+                    <a href="https://www.github.com" class="contact-button">
+                        <img src="svgs/linkedin-svgrepo-com (1).svg" alt="GitHub">
+              </div>
+              
+        </div>
+    </div>
+
+    <script src="js/about.js"></script>
+    <script src="js/effect.js"></script>
+    <script src="js/project.js"></script>
+</body>
+</html>
+<!-- original -->
